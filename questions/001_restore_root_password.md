@@ -2,7 +2,7 @@
 
 It can be preliminary task for starting Your exam. It is crucial to know this procedure by heart. 
 
-###Question:
+### Question:
  You do not know the root password but You have physical access to the machine. Create new root password
 and log into the system.
 
@@ -12,7 +12,7 @@ and log into the system.
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-###Answer:
+### Answer:
 
 * During boot time when GRUB loader screen is presented press *e* key. That will open an editor with current kernel boot options.
 * Find the line starting with ***linux16***. At the end of that line add **rd.break** and press ***Ctrl-x*** to restart the 
