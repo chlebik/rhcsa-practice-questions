@@ -32,3 +32,9 @@ two commands to be provided:
 
 * Type ***exit*** twice (with pressing ENTER after each one)
 * Now You can log into the system using new password
+
+
+### Additional comment:
+
+It is possible to edit startup parameters of the kernel from the command line and make it persistent. Just edit **/etc/default/grub**
+file and after that make sure to run ***grub2-mkconfig > /boot/grub2/grub.cfg*** in order to apply the changes.
