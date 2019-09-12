@@ -4,7 +4,8 @@ This repository contains separate practice questions/scenarios that should help 
 
 * MeetDarji - https://www.youtube.com/channel/UCCgSGcWnSQYwBchMxoIBIWA
 * InsideGNULinux - https://insidegnulinux.blogspot.com/2016/11/rhel-7-rhcsa-exam-questions-and-answers.html
-* LearnCertification - http://www.learncertification.com/study-material/practice-question-paper-with-answers
+* LearnCertification - http://www.learncertification.com/study-material/practice-question-paper-with-answers - which seems to be copy&paste from CertDepot quiz - https://www.certdepot.net/rhel7-rhcsa-sample-exam-1/
+
 
 
 Every question is placed in a separate file - therefore it is easier to split studying into small and comprehensive parts which can be used every day. There is no particular order in which questions are laid - it is a good way to easilly change context and not to stay focused on one topic for longer time.
