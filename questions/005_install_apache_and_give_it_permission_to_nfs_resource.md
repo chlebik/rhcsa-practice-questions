@@ -16,7 +16,8 @@ Install Apache and allow it to get documents from NFS mounted folder (**SELinux*
 connections for this service. Therefore the commands used:
 
 ```
-firewall-cmd –permanent –add-service=http    # notice the '-permament' option (in order to save rule to survive during reboots)
+# notice the '-permament' option (in order to save rule to survive during reboots)
+firewall-cmd –permanent –add-service=http
 firewall-cmd –reload
 ```
 
