@@ -14,4 +14,6 @@ At the very beginning of every file there is a question, then comes blank space 
 
 If You've found any mistake or error please do not hesitate to contact me or create PR with a fix. If You want to expand this repo please feel free to do so - I am open to new questions all the time.
 
+There is also a folder with my notes from **Sander van Gut** certification book. However it is only in Polish.
+
 **All the questions were validated by me on CentOS 7 - it is possible that it won't be working for newer versions!!!**
