@@ -4,7 +4,7 @@ This repository contains separate practice questions/scenarios that should help 
 
 * MeetDarji - https://www.youtube.com/channel/UCCgSGcWnSQYwBchMxoIBIWA
 * InsideGNULinux - https://insidegnulinux.blogspot.com/2016/11/rhel-7-rhcsa-exam-questions-and-answers.html
-* LearnCertification - http://www.learncertification.com/study-material/practice-question-paper-with-answers - which seems to be copy&paste from CertDepot quiz - https://www.certdepot.net/rhel7-rhcsa-sample-exam-1/
+* CertDepot - https://www.certdepot.net/rhel7-rhcsa-sample-exam-1/
 
 
 
