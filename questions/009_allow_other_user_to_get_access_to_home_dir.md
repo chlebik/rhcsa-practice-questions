@@ -52,3 +52,5 @@ drwxrwx---+  7 davis   davis    176 Jun 27 16:23 john
 ```
 
 For the partition to be able to use **ACLs** it must be mounted with ***acl mount*** property
+
+Removal of **ACLs** is achieved also via ***setfacl*** command but with proper flag (see man pages for examples)
