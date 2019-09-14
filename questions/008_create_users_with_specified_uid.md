@@ -47,7 +47,9 @@ passwd -e 2019-10-14 davis
 
 Remember there is a difference between **password expiration** and **account validation**. It is usually better to expire password and 
 make user not being able to log into the system or disable the user, rather than deleting it.
-**usermod** command is also used for adding/removing users to the group (**groupmod** command does not do that) 
 
+**usermod** command is also used for adding/removing users to the group (**groupmod** command does not do that)
 
-
+Trying to create user with already taken UID will result in an error.
+ 
+During user's creation with **useradd** command the structure of home direcotry is taken from ***/etc/skel*** folder. 
