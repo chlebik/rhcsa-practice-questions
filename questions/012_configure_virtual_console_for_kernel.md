@@ -1,9 +1,7 @@
-# Configure virtual console
-
-The description of this question on cert-depot is not clear. However it is worth knowing the tool used to configure kernel boot options. 
+# Create swap partition
 
 ### Question:
-Configure a virtual console.
+Create a logical volume of **200MB** called **lv_swap2** and add it permanently to the current swap space.
 
 ***
 (scroll down for an answer)
@@ -13,14 +11,37 @@ Configure a virtual console.
 
 ### Answer:
 
-* Setting virtual console is a part of configuring kernel parameters. Therefore a command **grubby** can be used:
+* Before any kind of operations on ***LVM*** it is good to know what we actually have in the system. The proper command to list all
+devices we can use is in order **pvs**, **vgs** and **lvs**. It shows all physical storages and devices, volume groups and logical volumes.
+
+
+* First we create a logical volume that is mentioned in the question and we create swap on it:
 
 ```
-grubby –update-kernel=ALL –args="console=ttyS0"
+lvcreate –size 200M –name lv_swap2 /dev/vg
+mkswap /dev/vg/lv_swap2
+swapon /dev/vg/lv_swap2  
 ```
 
-* With above parameters we update all kernels that are installed on the system with argument setting default console.
+* To make swap changes permanent as usual ***/etc/fstab*** must be edited:
+
+```
+vi /etc/fstab
+/dev/vg/lv_swap2 swap swap defaults 0 0
+```
+
+* It is good to check if everything works - the best way is to reboot the system (if possible) and after that issuing:
+
+
+```
+swapon -s
+free -k
+```
+
+which will show swa/memory statistics.
+
 
 ### Additional comment:
 
-Kernels are not updated but installed as new ones. By default **4** previous kernels are kept on the system.
+Both commands **mkswap** and **swapon** have parameters like **-L** and **-U** so it is possible to give these commands not only the
+path (to the file or partition) but label or UUID.
