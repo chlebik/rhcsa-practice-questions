@@ -37,6 +37,9 @@ usermod -aG sysgrp susan
 id andrew
 id susan
 id sarah
+
+# or for one group
+groupmems -g sysgrp -l 
 ```
 
 * You can try to login as **sarah** but it should not work:
