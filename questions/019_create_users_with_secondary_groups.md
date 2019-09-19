@@ -38,3 +38,9 @@ id andrew
 id susan
 id sarah
 ```
+
+* You can try to login as **sarah** but it should not work:
+
+```
+su - sarah
+```
