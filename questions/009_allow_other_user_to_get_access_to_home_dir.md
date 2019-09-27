@@ -26,7 +26,7 @@ chmod -R 700 /home/john
 should suffice. 
 
 * In order to extend the possibility to add additional users to be able to operate on folders and files there is a concept of
-**ACL**. They are set using the command **setfacl***.
+**ACL**. They are set using the command **setfacl**.
 
 * In the given case we can use below command to achieve what we want (however this **adds** the ownership not **replaces** it)   
 
