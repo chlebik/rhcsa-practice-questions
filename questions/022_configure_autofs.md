@@ -8,7 +8,7 @@ Configure **autofs** to automount the home directories of LDAP users.
 * LDAP userX home directory is **classroom.example.com:/home/guests/ldapuserX**
 * **ldapuserX** home directory should be automounted locally beneath **/home** as **/home/guests/ldapuserX**
 * home directories must be writable by their users
-* while Your are able to login as any of the users **ldapuser1-20** the only home directory You are able to access is **ldapuserX**
+* while You are able to login as any of the users **ldapuser1-20** the only home directory You are able to access is **ldapuserX**
  
 
 ***
