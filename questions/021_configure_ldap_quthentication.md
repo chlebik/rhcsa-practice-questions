@@ -30,7 +30,7 @@ LDAP config:
 authconfig-gtk
 ```
 
-and You just fill in the blanks (remember that LDAP server address needs **ldap://** prefix instead of **http://**!).
+and You just fill in the blanks (remember that LDAP server address needs **ldap://** prefix instead of **http://**).
 
 * After configuring LDAP to connect to we have to make sure that services that are responsible for handling the communication with 
 LDAP server. So we should enable and start **SSSD**:
