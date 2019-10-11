@@ -33,7 +33,7 @@ provided value:
 
 ```
 nmcli conn modify MY_CONNECTION [+]ipv4.dns SOME.DNS.TO.BE.USED  
-nmcli con mod MY_CONNECTION ipv4.ignore-auto-dns yes       # to disable DHCP DNS
+nmcli conn mod MY_CONNECTION ipv4.ignore-auto-dns yes       # to disable DHCP DNS
 ```
 
 * at the final stage it is wise to start this connection:
