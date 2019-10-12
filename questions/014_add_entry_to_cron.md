@@ -11,6 +11,15 @@ Create a cron job running as ***root***, starting at ***11PM every day*** and wr
 
 ### Answer:
 
+* Command use to gather system statistics is called **sar** and may not be installed on the system. So first what we have to do is install it and then enable the service:
+
+```
+yum install sysstat
+systemctl enable sysstat
+systemctl start sysstat
+```
+
+
 * As usual it is wise to check what we have already in the system. To see **crontab** we just issue:
 
 ```
