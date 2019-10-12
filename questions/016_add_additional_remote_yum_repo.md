@@ -12,7 +12,7 @@ Add additional repository for YUM with name **my_custom_repo** which can be foun
 ### Answer:
 
 * **YUM** repositories are configured mostly in the file **/etc/yum.conf**. We can see the total contents of this file with
-added formatting using command:
+added formatting using command (if it is not installed You can find it in the **yum-utils** package):
 
 ```
 yum-config-manager
