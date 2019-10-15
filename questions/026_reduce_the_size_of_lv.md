@@ -27,7 +27,7 @@ umount /MOUNT_POINT
 * It came the time to resize our logical volume:
 
 ```
-lvreduce -L 400M /dev/LINK_TO_LVM
+lvreduce -L -400M /dev/LINK_TO_LVM
 ```
 
 * Now we just remount the volume again and check if everything as it should be:
