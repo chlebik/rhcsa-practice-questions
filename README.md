@@ -16,4 +16,5 @@ If You've found any mistake or error please do not hesitate to contact me or cre
 
 There is also a folder with my notes from **Sander van Gut** certification book. However it is only in Polish.
 
-**All the questions were validated by me on CentOS 7 - it is possible that it won't be working for newer versions!!!**
+**All the questions were validated by me on CentOS 7 - it is possible that it won't be working for newer versions!!! Questions for
+RHCSA 8 exams are explicitly marked.**
