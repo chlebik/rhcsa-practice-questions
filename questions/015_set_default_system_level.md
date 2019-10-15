@@ -34,5 +34,5 @@ Here is the list of all targets in **systemd**:
   * 5	graphical.target
   * 6	reboot.target
 
-<br />
+
 Some time ago a file **/etc/inittab** was used to specify default system level however now it is deprecated and does not work. 

@@ -1,7 +1,7 @@
 # Create users and assign them to secondary groups
 
 ### Question:
-* Create groups ***sysgrp*** 
+* Create group ***sysgrp*** 
 * Create user **andrew** and **susan** who belong to this group (as secondary group)
 * Create user **sarah** who does not have an access to the shell 
 * Password for all the users should be **Postroll**

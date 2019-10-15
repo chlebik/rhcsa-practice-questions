@@ -27,11 +27,11 @@ parted -l
 ```
 
 if the output for label/partition table contains **DOS** in any way then the partition table was configured using **MBR**. 
-If there is anything else - **GPT**. **It is crucial to not mix them on one device(creating MBR partitions on GPT and vice versa)!**
+If there is anything else - **GPT**. **It is crucial to not mix them on one device (creating MBR partitions on GPT and vice versa)!**
 
 
 * Creating new partition was described in **question 017**. Make sure that the type of partition is set to **Linux LVM** and that
-Your run **partprobe** after it (to let kernel reread new partition table). 
+You run **partprobe** after it (to let kernel reread new partition table). 
 
 
 * When we got the partition the first step is to create **physical partition**: 

@@ -17,7 +17,7 @@ Change hostname of the system
 * It is possible to use specific command - **hostnamectl**:
  
 ```
-hostnamectl --set-hostname SOME_NAME
+hostnamectl set-hostname SOME_NAME
 ```
 
 * It is possible to use **nmcli** for this with command:

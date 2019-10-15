@@ -46,7 +46,7 @@ using it as a target create new **logical** partition on it (up to the total num
 just provide **+100M** value (instead of using blocks) and then remember to write the changes to the partition table by pressing
 **w**. Then quit.
 
-* We should let know the kernel that partition table was changed (compare **fdisk -l /link/to/disc with **cat /proc/partitions**).
+* We should let know the kernel that partition table was changed (compare **fdisk -l /link/to/disc** with **cat /proc/partitions**).
 If there is a difference between them then:
 
 ```

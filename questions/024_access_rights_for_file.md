@@ -1,7 +1,7 @@
 # Configure access rights to the file
 
 ### Question:
-Copy the file **/etc/fstab** to **/var/tmp**. The file copied should be owner by **root**, the group also should be set to **root**
+Copy the file **/etc/fstab** to **/var/tmp**. The file copied should be owned by **root**, the group also should be set to **root**
 and should no be executable by anyone.
 The user **andrew** should have read&write access to this file.
 User **susan** should not have any rights to this file.

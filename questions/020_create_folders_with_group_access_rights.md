@@ -44,3 +44,7 @@ ls -ltr /redhat/  # to check the permissions
 touch /redhat/sysgrp/test.log
 ls -ltr /redhat/sysgrp
 ```
+
+### Additional comment:
+
+Even if the user creating file in the directory is **root** it will still have group owner of **sysgrp**.
