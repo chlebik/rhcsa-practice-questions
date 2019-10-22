@@ -17,6 +17,7 @@ and log into the system.
 * During boot time when GRUB loader screen is presented press *e* key. That will open an editor with current kernel boot options.
 * Find the line starting with ***linux16***. At the end of that line add **rd.break** and press ***Ctrl-x*** to restart the 
 system with new option.
+* ***For RHCSA8 only*** - You should also remove existing parameters **ro** and **crashkernel=...**.
 * What this actually does is taking You to the target right at the end of the boot stage - before root filesystem is mounted (on /).
 * Type ***mount -o remount,rw /sysroot***. This actually gets You RW access to the filesystem. ***/sysroot*** folder is Your 
 normal ***/*** hierarchy.

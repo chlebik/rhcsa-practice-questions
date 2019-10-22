@@ -1,6 +1,6 @@
 # Make journald persistent between reboots
 
-PURE RHCSA QUESTION!
+PURE RHCSA8 QUESTION!
 
 ### Question:
 Configure **journald** to persist between reboots
