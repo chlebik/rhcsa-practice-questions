@@ -1,6 +1,6 @@
 # Configure block device to use VDO
 
-PURE RHCSA QUESTION!
+PURE RHCSA 8 QUESTION!
 
 ### Question:
 Apply **VDO** (Virtual Data Optimizer) to the block device.
