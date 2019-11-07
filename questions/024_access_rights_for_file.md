@@ -2,7 +2,7 @@
 
 ### Question:
 Copy the file **/etc/fstab** to **/var/tmp**. The file copied should be owned by **root**, the group also should be set to **root**
-and should no be executable by anyone.
+and should not be executable by anyone.
 The user **andrew** should have read&write access to this file.
 User **susan** should not have any rights to this file.
 All other users (current or future) should have the ability to read this file.
