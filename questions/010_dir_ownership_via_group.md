@@ -52,5 +52,5 @@ usermod -aG team davis
 
 ### Additional comment:
 
-It is possible to change user's primary group for the current session using **newgrp**  command.
+It is possible to change user's primary group for the current session using **newgrp** command.
 
