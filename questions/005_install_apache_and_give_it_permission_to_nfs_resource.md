@@ -30,15 +30,31 @@ systemctl start httpd
 ```
 
 * **SELinux** at the end of the exam should be enabled and set to **enforcing** mode. Therefore always pay attention to this aspect of system
-configuration. The usual problem for using **SELinux** is to find out what **rule** should be used. In order to simplify that a concept of
-**boolean settings** is a part of **SELinux**. Below commands are listing all of them, grepping in search for ***nfs*** (that we are interested in), then
-grepping again only for ***httpd*** service. At the end we just enable proper boolean setting (notice ***-P*** flag to make it persistent).
- 
+configuration. The usual problem for using **SELinux** is to find out what **rule** should be used. 
+
+One easy way to tell which SELinux related configuration has to be done, is through sealert command. This command is used to diagnose SELinux 
+denials and attempts to provide user friendly explanations for a SELinux denial  and  recommendations for how one might adjust the system to 
+prevent the denial in the future.
+       
+So use this command to analyze Selinux denials log /var/log/audit/audit.log
+```
+sealert -a /var/log/audit/audit.log
+```
+
+The output suggest to adjust the following boolean setting:
 
 ```
-getsebool -a | grep nfs | grep httpd
-setsebool -P httpd_use_nfs on
+*****  Plugin catchall_boolean (47.5 confidence) suggests   ******************
+
+If you want to allow httpd to use nfs
+Then you must tell SELinux about this by enabling the 'httpd_use_nfs' boolean.
+
+Do
+setsebool -P httpd_use_nfs 1
 ```
+
+After executing setsebool -P httpd_use_nfs 1 Apache will be allowed to get documents from NFS mounted folder 
+
 
 
 ### Additional comment:
