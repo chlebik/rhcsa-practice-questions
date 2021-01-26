@@ -31,6 +31,11 @@ two commands to be provided:
  chcon -t shadow_t /etc/shadow
 ```
 
+* Alternately, create /.autorelabel which will force a relabel on the next boot (and automatically reboot again to apply the fix):
+```
+touch /.autorelabel
+```
+
 * Type ***exit*** twice (with pressing ENTER after each one)
 * Now You can log into the system using new password
 

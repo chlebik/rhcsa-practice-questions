@@ -40,7 +40,7 @@ Number of days of warning before password expires       : 7
 * Given that we know the current date we can set expiry date manually:
 
 ```
-passwd -e 2019-10-14 davis
+chage -E 2019-10-14 davis
 ```
 
 ### Additional comment:
