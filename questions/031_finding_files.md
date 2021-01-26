@@ -17,5 +17,5 @@ It is worthwhile to browse through man pages of that command.
 * Below listing provides what is needed
 
 ```
-find /etc/ -maxdepth 1 -mtime +180
+find /etc -type f -maxdepth 1 -mtime +180
 ```
