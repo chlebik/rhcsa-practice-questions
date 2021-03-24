@@ -22,5 +22,7 @@ systemctl restart systemd-journald.service
 ```
 
 and that's all. After reboot all logs will still be there.
-# From man journald.conf:
-# ... Storage= Controls where to store journal data. ... If "persistent", data will be stored preferably on disk, i.e. below the /var/log/journal hierarchy (which is created if needed), with a fallback to /run/log/journal (which is created if needed), during early boot and if the disk is not writable. "auto" behaves like "persistent" if the /var/log/journal directory exists, and "volatile" otherwise (the existence of the directory controls the storage mode)."
+### From `man journald.conf`:
+> (...)  
+> Storage= 
+>> Controls where to store journal data. ... If "persistent", data will be stored preferably on disk, i.e. below the /var/log/journal hierarchy (which is created if needed), with a fallback to /run/log/journal (which is created if needed), during early boot and if the disk is not writable. "auto" behaves like "persistent" if the /var/log/journal directory exists, and "volatile" otherwise (the existence of the directory controls the storage mode)."
