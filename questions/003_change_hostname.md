@@ -13,7 +13,7 @@ Change hostname of the system
 
 * Actually there are numerous ways to achieve that.
 * The simplest one is just to use ***nmtui*** and choose proper item in the menu
-* You can manually edit **/etc/hosts** (not recommended)
+* You can manually edit **/etc/hostname** (not recommended)
 * It is possible to use specific command - **hostnamectl**:
  
 ```
