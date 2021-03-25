@@ -37,14 +37,15 @@ Maximum number of days between password change          : 99999
 Number of days of warning before password expires       : 7
 ```
 
-* Given that we know the current date we can set expiry date manually:
+* Given that we know the current date we can set expiry date manually by copying the following from the chage man pages:
 
 ```
-chage -E 2019-10-14 davis
+man chage
+chage -E $(date -d +30days +%Y-%m-%d)
 ```
 
 ### Additional comment:
-
+Using "man chage" and scrolling down a bit you can copy and paste the command above without memorizing it and just simply paste the number of days you want to add until the account expires.
 Remember there is a difference between **password expiration** and **account validation**. It is usually better to expire password and 
 make user not being able to log into the system or disable the user, rather than deleting it.
 
