@@ -43,7 +43,7 @@ parted /dev/something
 using it as a target create new **logical** partition on it (up to the total number of **15**).
 
 * Editor will be opened where You choose **n** to create new partition, we prompt the start of block size, then to easy things
-just provide **+100M** value (instead of using blocks) and then remember to write the changes to the partition table by pressing
+just provide **+100MB** value (instead of using blocks) and then remember to write the changes to the partition table by pressing
 **w**. Then quit.
 
 * We should let know the kernel that partition table was changed (compare **fdisk -l /link/to/disc** with **cat /proc/partitions**).
