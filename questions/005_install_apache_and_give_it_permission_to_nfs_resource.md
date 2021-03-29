@@ -51,6 +51,8 @@ Then you must tell SELinux about this by enabling the 'httpd_use_nfs' boolean.
 
 Do
 setsebool -P httpd_use_nfs 1
+Or, for persistant after reboot,
+semanage boolean --on --modify httpd_use_nfs
 ```
 
 After executing setsebool -P httpd_use_nfs 1 Apache will be allowed to get documents from NFS mounted folder 
