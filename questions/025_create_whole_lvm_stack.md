@@ -39,7 +39,7 @@ You run **partprobe** after it (to let kernel reread new partition table).
 ```
 pvcreate /dev/PARTITION_IDENTIFIER
 # check if it was created
-pgdisplay
+pvdisplay
 ```
 
 * Physical partition can be assigned to the **volume group**.
