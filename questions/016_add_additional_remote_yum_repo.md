@@ -32,10 +32,36 @@ baseurl=http://local.repo/rhel7
 enabled=1
 ```
 
+* Suppose the contents of the repo file is too hard to remember, you can alternatively use `yum-config-manager` to add a new repo and rename it later.
+
+```
+yum-config-manager --add-repo="http://local.repo/rhel7"
+
+```
+* This will create a new repo file in `/etc/yum.repos.d/local.repo_rhel7.repo` with the following contents.
+
+```
+[local.repo_rhel7]
+name= created by dnf config-manager from http://local.repo/rhel7
+baseurl=http://local.repo/rhel7
+enabled=1
+```
+* You can then edit the file contents and rename the file as per you need. In our content, it would be:
+```
+[my_custom_repo] # renamed
+name= my_custom_repo # renamed
+baseurl=http://local.repo/rhel7
+enabled=1
+```
+
 * Make sure that repository is seen by YUM:
 
 ```
 yum repolist | grep my_custom_repo
 * or other (which is more readable)
 yum-config-manager my_custom_repo 
+```
+**Note:** You might encounter gpg check failures when you add a new repo, so skip gpg checks in that case append to the new repo file the following.
+```
+gpgcheck=0
 ```
