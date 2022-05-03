@@ -14,8 +14,11 @@ Find All Files in ***/etc*** (not subdirectories) that contain text "chrony" (ig
 * For browsing file's contents the main command is **grep**. Below is the simple one-liner.
 
 ```
+grep -d skip -il chrony /etc/*
 grep -lis chrony /etc/*
 ```
+
+Both commands will return the exact same, the first one skipping the (sub)directories while the first one will suppress the errors instead.
 
 
 ### Additional comment:
