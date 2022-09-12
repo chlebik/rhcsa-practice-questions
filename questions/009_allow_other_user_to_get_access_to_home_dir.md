@@ -37,12 +37,16 @@ setfacl -R -m u:davis:rwx /home/john
 * To check what is the status of **ACLs** on the file/home we use ***getfacl /home/john***.
 
 * Above commands are changing existing files and folders (with ***-R*** making it recursive). However if we want to make it applicable to the 
-  new files and folders there must be ***d:*** (default) prefix used. So the final command should look like:
+  new files and folders there must be ***d:*** (default) prefix used.
   
  ```
  setfacl -R -m d:u:davis:rwx /home/john
  ```
 
+* To grant access to both existing files and folders and newly created files and folders, the final command could look something like:
+```
+setfacl -R -m u:davis:rwx,d:u:davis:rwx /home/john
+```
 
 ### Additional comment:
 
