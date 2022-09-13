@@ -8,6 +8,9 @@ Bind with LDAP located on **ldap.server.com**
 directory (configured in different question)
 * all **LDAP** users have password **password** 
 
+### Note:
+According to CertDepot, [Objectives around Virtualization and LDAP configuration are gone](https://www.certdepot.net/rhel8-rhcsa-whats-new/). Additionally, `authconfig-gtk` is no longer available for RHEL8. Instead, `authselect` should be used to configure the system to use SSSD, and SSSD configured to use LDAP, if LDAP authentication is required.
+
 ***
 (scroll down for an answer)
 
@@ -36,8 +39,8 @@ and You just fill in the blanks (remember that LDAP server address needs **ldap:
 LDAP server. So we should enable and start **SSSD**:
 
 ```
-systemctl enable SSSD
-systemctl start SSSD
+systemctl enable sssd
+systemctl start sssd
 ```
 
 
