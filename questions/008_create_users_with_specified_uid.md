@@ -2,7 +2,7 @@
 
 ### Question:
 Create two users: ***john*** with uid/gid equal to 2000, password 12345678 and ***davis*** with uid/gid equal to 3000, password 87654321. 
-Make ***davis'*** account validity stopping in one month.
+Make ***davis'*** password validity stopping in one month.
 
 ***
 (scroll down for an answer)
