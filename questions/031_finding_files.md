@@ -1,7 +1,7 @@
 #  Find files with specific properties
 
 ### Question:
-Find All Files in ***/etc*** (not subdirectories) that where modified more than 180 days ago.
+Find All Files in ***/etc*** (not subdirectories) that where modified more than 180 days ago. And copy all of them to a directory /var/tmp/pvt
 
 ***
 (scroll down for an answer)
@@ -17,5 +17,5 @@ It is worthwhile to browse through man pages of that command.
 * Below listing provides what is needed
 
 ```
-find /etc -type f -maxdepth 1 -mtime +180
+find /etc -type f -maxdepth 1 -mtime +180 -exec cp {} /var/tmp/pvt \;
 ```
