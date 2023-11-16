@@ -18,7 +18,7 @@ grep -d skip -il chrony /etc/*
 grep -lis chrony /etc/*
 ```
 
-Both commands will return the exact same, the first one skipping the (sub)directories while the first one will suppress the errors instead.
+Both commands will return the exact same, the first one skipping the (sub)directories while the second one will suppress the errors instead.
 
 
 ### Additional comment:
