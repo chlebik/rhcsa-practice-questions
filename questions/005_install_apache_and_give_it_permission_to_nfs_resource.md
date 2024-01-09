@@ -17,8 +17,8 @@ connections for this service. Therefore the commands used:
 
 ```
 # notice the '-permament' option (in order to save rule to survive during reboots)
-firewall-cmd –permanent –add-service=http
-firewall-cmd –reload
+firewall-cmd -–permanent -–add-service=http
+firewall-cmd –-reload
 ```
 
 * Besides firewall configuration for network-interacting services for all services being installed in the system remember to enable it (to autostart after reboot)
